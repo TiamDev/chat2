@@ -269,6 +269,8 @@
           right: '8%',
           opacity: 1
         });
+        $('.popup').fadeOut();
+
       });
 
       $('.close').click(function () {
@@ -279,7 +281,8 @@
           right: '-8px',
           opacity: 0.1
         });
-      })
+        $('.popup').fadeIn();
+      });
 
 
       $(document).keydown(function (e) {
@@ -301,6 +304,7 @@
         <div>${m}</div>
       </div>`;
           $('footer input').val("");
+
         }
       })
     });
